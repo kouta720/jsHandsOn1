@@ -1,0 +1,63 @@
+<!--
+Requirements
+HTML Input to allow the user to input grades(numbers)
+The input should only allow a number type to be inputted.
+The input should only allow number 0 - 100.
+Using JavaScript and DOM Manipulation, display the letter grade on the page.
+Should allow a single or multiple inputs at once.
+If multiple inputs are entered, the systems should return each individual letter grade as well as an average.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Report Card</title>
+  </head>
+  <body>
+    <script src="app.js" charset="utf-8"></script>
+<fieldset>
+<legend><h1>Test of Many Tests</h1></legend>
+<table style="width:50%">
+
+  <tr>
+    <th>Test Subject</th>
+    <th>Score</th>
+    <th>Grade</th>
+  </tr>
+<!--  Subject 1 -->
+  <tr>
+    <td><input type="text" placeholder="Subject"/></td>
+    <td><input type="text" name="numGrade" id="score1" placeholder="Score"/></td>
+    <td><label id="letterGrade1"></label></td>
+  </tr>
+<!--  Subject 2 -->
+  <tr>
+    <td><input type="text" placeholder="Subject"/></td>
+    <td><input type="text" name="numGrade" id="score2" placeholder="Score"/></td>
+    <td><label id="letterGrade2"></label></td>
+  </tr>
+<!--  Subject 3 -->
+  <tr>
+    <td><input type="text" placeholder="Subject"/></td>
+    <td><input type="text" name="numGrade" id="score3" placeholder="Score"/></td>
+    <td><label id="letterGrade3"></label></td>
+  </tr>
+<!--  Results -->
+  <tr>
+    <td>
+      <button onclick="gradeMe()">Final Grade</button>
+    </td>
+    <td>
+      <input type="text" id="total" placeholder="Average" readonly/>
+    </td>
+    <td><label id="finalLetter"></td>
+  </tr>
+
+</table>
+</fieldset>
+
+<!-- app scripts -->
+    <script src="app.js" charset="utf-8"></script>
+
+  </body>
+</html>
